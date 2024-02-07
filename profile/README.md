@@ -24,6 +24,25 @@ Cada microsserviço pode ser desenvolvido em uma tecnologia diferente, conforme 
 - Recebimento Pix: (Preencher aqui as tecnologias)
 - Gestão de Chaves: (Preencher aqui as tecnologias)
 
+  ### Bancos de Dados
+
+  A ser discutido
+
+## Diagrama de Arquitetura (Alto Nível)
+
+```mermaid
+  graph TD;
+      FrontendWeb-->APIGateway;
+      APIGateway-->ContaCorrente;
+      APIGateway-->EnvioPix;
+      APIGateway-->RecebimentoPix;
+APIGateway --> GestaoChaves;
+    ContaCorrente --> BancoDeDados1;
+    EnvioPix --> BancoDeDados2;
+    RecebimentoPix --> BancoDeDados3;
+    GestaoChaves --> BancoDeDados4;
+```
+
 ## Contribuição
 
 
