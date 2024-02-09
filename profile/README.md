@@ -15,14 +15,21 @@ O projeto é organizado em microsserviços, cada um responsável por uma parte e
 - **Recebimento Pix:** Responsável pelo processamento de transações de recebimento de Pix.
 - **Gestão de Chaves:** Responsável pelo gerenciamento das chaves Pix dos usuários.
 
+## API Gateway
+
+O API Gateway serve como o ponto de entrada único para todas as requests de API, podendo servir também como um BFF. Ele é responsável por rotear as requests para os microsserviços apropriados, aplicar políticas de segurança, gerenciar autenticação e autorização, além de fornecer funcionalidades adicionais, como rate limiting, logging, circruit breaker e ACL.
+
+No momento, estamos utilizando o Kong como nosso API Gateway, juntamente com o Konga como interface para simplificar o gerenciamento.
+
 ## Tecnologias
 
-Cada microsserviço pode ser desenvolvido em uma tecnologia diferente, conforme as necessidades e preferências da equipe. Algumas tecnologias que podem ser consideradas incluem:
+Cada microsserviço pode ser desenvolvido em uma tecnologia diferente, conforme as necessidades e preferências da equipe/projeto/repositório. Algumas tecnologias que podem ser consideradas incluem:
 
 - Conta Corrente: (Preencher aqui as tecnologias)
 - Envio de Pix: (Preencher aqui as tecnologias)
 - Recebimento Pix: (Preencher aqui as tecnologias)
 - Gestão de Chaves: (Preencher aqui as tecnologias)
+- API Gateway: Kong, Konga. 
 
   ### Bancos de Dados
 
